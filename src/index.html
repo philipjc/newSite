@@ -43,10 +43,10 @@
 	<meta name="msapplication-square150x150logo" content="assets/img/ms-icon-150x150.png">
 	<meta name="msapplication-square70x70logo" content="assets/img/ms-icon-70x70.png">
 	<!-- CSS links -->
-	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/base.css">
-	<link rel="stylesheet" href="assets/css/layout.css">
-	<link rel="stylesheet" href="assets/css/modules.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/modules.css">
 	<!-- Header Javascript links -->
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5.js"></script>
@@ -56,29 +56,127 @@
 <body>
   <!-- inline images are for content, background images in the css are for style -->
 <!-- banner. We can add navigation roles to help screen readers. -->
-<header role="banner">
 
-</header>
-
-<nav role="navigation">
-
-</nav>
-
-
+<div class="row row--banner">
+  banner
+  <header class="row container-wide">
+    container-wide
+  </header>
+  <section class="row container-medium">
+    container-medium
+  </section>
+</div>
 
 <!-- features -->
 
+<div class="row row--white row--padding-wide">
+  features
+  <div class="row container-medium">
+    container-medium
+
+    <div class="row"> <!-- Module-->
+      <div class="col-narrow--right">
+        col-narrow--right
+      </div>
+      <div class="col-wide">
+        col-wide
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-narrow">
+        col-narrow--right
+      </div>
+      <div class="col-wide--right">
+        col-wide--right
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-narrow--right">
+        col-narrow--right
+      </div>
+      <div class="col-wide">
+        col-wide
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- photos -->
+
+<div class="row">
+
+  <div class="col-medium">
+    col-medium
+  </div>
+
+  <div class="col-medium">
+    col-medium
+  </div>
+
+</div>
 
 <!-- testimonials -->
 
+<div class="row row--white row--padding-wide">
+  testimonials
+  <section class="row container-narrow">
+    container-narrow
+  </section>
+</div>
+
 <!-- facts -->
+
+<div class="row row--grey row--padding-wide">
+  facts
+  <section class="row container-narrow">
+    container-narrow
+  </section>
+
+  <div class="row container-medium">
+
+    <div class="col-narrow">
+      col-narrow
+    </div>
+    <div class="col-narrow">
+      col-narrow
+    </div>
+    <div class="col-narrow">
+      col-narrow
+    </div>
+    <div class="col-narrow">
+      col-narrow
+    </div>
+
+  </div>
+
+</div>
 
 <!-- press -->
 
-<!-- footer -->
-<footer role="contentinfo">
+<div class="row row--blue row--padding-medium">
+  press
+  <section class="row container-wide">
+    container-wide
+  </section>
+</div>
 
-</footer>
+<!-- footer -->
+
+<div class="row row--dark-grey row--padding-medium">
+  footer
+  <footer class="row container-wide">
+    container-wide
+    <div class="col-wide">
+      col-wide
+    </div>
+    <div class="col-narrow--right">
+      col-narrow
+    </div>
+  </footer>
+</div>
+
 </body>
 </html>
