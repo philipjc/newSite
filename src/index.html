@@ -55,127 +55,190 @@
 </head>
 <body>
   <!-- inline images are for content, background images in the css are for style -->
-<!-- banner. We can add navigation roles to help screen readers. -->
+<!-- banner. We can add navigation roles to help screen readers. Aria landmarks -->
 
 <div class="row row--banner">
-  banner
-  <header class="row container-wide">
-    container-wide
-  </header>
-  <section class="row container-medium">
-    container-medium
-  </section>
+	<header class="row container-wide header" role="banner">
+		<div class="header__logo">
+			<img src="img/logo-correlate.png" alt="correlate">
+		</div>
+		<nav class="header__nav" role="navigation">
+			<ul>
+				<li class="header__nav-about"><a href="#">About</a></li>
+				<li class="header__nav-contact current"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="row container-medium banner-content">
+		<h1 class="banner-content__heading">
+		  A Better Website Construction
+		</h1>
+		<a href="#"><img src="img/icon-cta.png" alt="App store"></a>
+	</section>
 </div>
 
 <!-- features -->
-
-<div class="row row--white row--padding-wide">
-  features
-  <div class="row container-medium">
-    container-medium
-
-    <div class="row"> <!-- Module-->
-      <div class="col-narrow--right">
-        col-narrow--right
-      </div>
-      <div class="col-wide">
-        col-wide
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-narrow">
-        col-narrow--right
-      </div>
-      <div class="col-wide--right">
-        col-wide--right
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-narrow--right">
-        col-narrow--right
-      </div>
-      <div class="col-wide">
-        col-wide
-      </div>
-    </div>
-
-  </div>
+<div class="row row--white row--padding-wide features">
+	<div class="row container-medium">
+		<div class="row features__row">
+			<div class="col-narrow--right features__bike">
+			</div>
+			<div class="col-wide">
+				<h2 class="features__heading">
+					Easy to use, money management.
+				</h2>
+				<p class="features__text">
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+				</p>
+			</div>
+		</div>
+		<div class="row features__row">
+			<div class="col-narrow features__phone">
+			</div>
+			<div class="col-wide--right features__padding">
+				<h2 class="features__heading">
+					Day to day breakdown.
+				</h2>
+				<p class="features__text">
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+				</p>
+			</div>
+		</div>
+		<div class="row features__row">
+			<div class="col-narrow--right features__safe">
+			</div>
+			<div class="col-wide">
+				<h2 class="features__heading">
+					Connect securely with your bank.
+				</h2>
+				<p class="features__text">
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- photos -->
-
 <div class="row">
-
-  <div class="col-medium">
-    col-medium
-  </div>
-
-  <div class="col-medium">
-    col-medium
-  </div>
-
+	<div class="col-medium">
+		<img src="img/photo1.jpg" alt="Writing on notepaper">
+	</div>
+	<div class="col-medium">
+		<img src="img/photo2.jpg" alt="Holding a mobile device showing a graph">
+	</div>
 </div>
 
 <!-- testimonials -->
-
-<div class="row row--white row--padding-wide">
-  testimonials
-  <section class="row container-narrow">
-    container-narrow
-  </section>
+<div class="row row--white row--padding-wide testimonials">
+	<section class="row container-narrow">
+		<h3 class="testimonials__heading">
+			What they are saying
+		</h3>
+		<img src="img/avatar.jpg" alt="Robert Johnson - Avatar">
+		<blockquote>
+			<p class="testimonials__quote">
+				<em>"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur"</em>
+			</p>
+			<p class="testimonials__source">
+				Robert Johnson
+			</p>
+		</blockquote>
+	</section>
 </div>
 
 <!-- facts -->
-
-<div class="row row--grey row--padding-wide">
-  facts
-  <section class="row container-narrow">
-    container-narrow
-  </section>
-
-  <div class="row container-medium">
-
-    <div class="col-narrow">
-      col-narrow
-    </div>
-    <div class="col-narrow">
-      col-narrow
-    </div>
-    <div class="col-narrow">
-      col-narrow
-    </div>
-    <div class="col-narrow">
-      col-narrow
-    </div>
-
-  </div>
-
+<div class="row row--grey row--padding-wide facts">
+	<section class="row container-narrow facts-intro">
+		<h3 class="facts-intro__heading">
+			A few facts
+		</h3>
+		<p class="facts-intro__text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
+		</p>
+	</section>
+	<div class="row container-medium facts-list">
+		<div class="col-narrow">
+			<span class="facts-list__icons facts-list__id"></span>
+			<h4 class="facts-list__heading">2,000,000</h4>
+			<p class="facts-list__text">Lorem ipsum</p>
+		</div>
+		<div class="col-narrow">
+			<span class="facts-list__icons facts-list__eye"></span>
+			<h4 class="facts-list__heading">11,000,000</h4>
+			<p class="facts-list__text">Lorem ipsum</p>
+		</div>
+		<div class="col-narrow">
+			<span class="facts-list__icons facts-list__timer"></span>
+			<h4 class="facts-list__heading">5 minutes</h4>
+			<p class="facts-list__text">Lorem ipsum</p>
+		</div>
+		<div class="col-narrow">
+			<span class="facts-list__icons facts-list__chart"></span>
+			<h4 class="facts-list__heading">40%</h4>
+			<p class="facts-list__text">Lorem ipsum</p>
+		</div>
+	</div>
 </div>
 
 <!-- press -->
-
-<div class="row row--blue row--padding-medium">
-  press
-  <section class="row container-wide">
-    container-wide
-  </section>
+<div class="row row--blue row--padding-medium press">
+	<section class="row container-wide">
+		<h3 class="press__heading">
+			Recent press
+		</h3>
+		<div class="row">
+			<div class="press__logos press__logos--solvable">
+				<a href="#"><img src="img/logo-solveable.png" alt="Solveable"></a>
+			</div>
+			<div class="press__logos press__logos--nc">
+				<a href="#"><img src="img/logo-nc.png" alt="NC"></a>
+			</div>
+			<div class="press__logos press__logos--waratah">
+				<a href="#"><img src="img/logo-waratah.png" alt="The Waratah Post"></a>
+			</div>
+			<div class="press__logos press__logos--bevel">
+				<a href="#"><img src="img/logo-bevel.png" alt="The Bevel"></a>
+			</div>
+		</div>
+	</section>
 </div>
 
 <!-- footer -->
-
-<div class="row row--dark-grey row--padding-medium">
-  footer
-  <footer class="row container-wide">
-    container-wide
-    <div class="col-wide">
-      col-wide
-    </div>
-    <div class="col-narrow--right">
-      col-narrow
-    </div>
-  </footer>
+<div class="row row--dark-grey row--padding-medium footer">
+	<footer class="row container-wide" role="contentinfo">
+		<div class="col-wide footer__info">
+			<div class="footer__logo">
+				<img src="img/logo-correlate.png" alt="correlate">
+			</div>
+			<div class="row">
+				<div class="col-medium">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="col-medium">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Google+</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer__copyright">
+				<ul>
+					<li>&copy; 2014 Correlate INC.</li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-narrow--right footer__cta">
+			<a href="#"><img src="img/icon-cta.png" alt="App store"></a>
+		</div>
+	</footer>
 </div>
 
 </body>
